@@ -100,7 +100,7 @@ namespace MVCClinica.Controllers
         {
             if (ModelState.IsValid)
             {
-                AdminMedico.modificar(m); // TODO no anda
+                AdminMedico.modificar(m); 
                 return RedirectToAction("Index");
             }
             return View("Edit", m);
